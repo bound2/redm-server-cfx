@@ -3,7 +3,7 @@
  * @param eventName - which event will be sent to the server script
  * @param args - arguments to be passed to another server script
  */
-export declare function emit(eventName: string, ...args: any[]): void;
+declare function emit(eventName: string, ...args: any[]): void;
 
 /**
  * Emit event to a specific client or to all clients
@@ -11,38 +11,38 @@ export declare function emit(eventName: string, ...args: any[]): void;
  * @param target - player server id or -1 to send to all
  * @param args - arguments to be passed to client scripts
  */
-export declare function emitNet(eventName: string, target: number | string, ...args: any[]): void;
+declare function emitNet(eventName: string, target: number | string, ...args: any[]): void;
 
 /**
  * Listen to events from client & server
  * @param eventName - event to listen to
  * @param callback  - function to execute
  */
-export declare function onNet(eventName: string, callback: Function): void;
+declare function onNet(eventName: string, callback: Function): void;
 
 /**
  * Listen to event from server only
  * @param eventName - event to listen to
  * @param callback - function to execute
  */
-export declare function on(eventName: string, callback: Function): void;
+declare function on(eventName: string, callback: Function): void;
 
 /**
  * This allows you to create a timer that ticks every game frame / server tick.
  * It can be used like a loop that runs forever unless cancelled.
  * @param callback - function to execute periodically
  */
-export declare function setTick(callback: Function): number;
+declare function setTick(callback: Function): number;
 
 /**
  * Cancel periodic loop.
  * @param callback - callback id obtained from `setTick` method
  */
-export declare function clearTick(callback: number): void;
+declare function clearTick(callback: number): void;
 
-export declare function GetConvar(varName: string, default_: string): string;
+declare function GetConvar(varName: string, default_: string): string;
 
-export declare function GetConvarInt(varName: string, default_: number): number;
+declare function GetConvarInt(varName: string, default_: number): number;
 
 /**
  * Registered commands can be executed by entering them in the client console (this works for client side and server side registered commands). 
@@ -54,12 +54,12 @@ export declare function GetConvarInt(varName: string, default_: number): number;
  * @param handler - A handler function that gets called whenever the command is executed.
  * @param restricted - If this is a server command and you set this to true, then players will need the command.yourCommandName ace permission to execute this command.
  */
-export declare function RegisterCommand(commandName: string, handler: Function, restricted: boolean): void;
+declare function RegisterCommand(commandName: string, handler: Function, restricted: boolean): void;
 
 /**
  * Cancels the currently executing event.
  */
-export declare function CancelEvent(): void;
+declare function CancelEvent(): void;
 
 /**
  * Use this to export functions so they can be called from other resources.
@@ -68,9 +68,9 @@ export declare function CancelEvent(): void;
  *     DropPlayer(src, reason);
  * });
  */
-export declare var exports: any; // eslint-disable-line no-var
+declare var exports: any; // eslint-disable-line no-var
 
 /**
  * player's server id, which is present on client's `onNet` calls
  */
-export declare var source: string; // eslint-disable-line no-var
+declare var source: string; // eslint-disable-line no-var
