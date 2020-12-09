@@ -62,6 +62,11 @@ declare function RegisterCommand(commandName: string, handler: Function, restric
 declare function CancelEvent(): void;
 
 /**
+ * Returns the name of the currently executing resource.
+ */
+declare function GetCurrentResourceName(): string;
+
+/**
  * Use this to export functions so they can be called from other resources.
  * For example:
  * exports("dropPlayer", (src: string, reason: string) => {
