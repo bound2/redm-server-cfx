@@ -1,9 +1,9 @@
 {
     "name": "redm-server-cfx",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "TypeScript RedM cfx",
-    "main": "dist/server-cfx.js",
-    "types": "dist/server-cfx.d.ts",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "author": "bound2 <9380102+bound2@users.noreply.github.com>",
     "repository": {
         "type": "git",
