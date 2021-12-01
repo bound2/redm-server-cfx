@@ -44,6 +44,12 @@ declare function GetConvar(varName: string, default_: string): string;
 
 declare function GetConvarInt(varName: string, default_: number): number;
 
+declare function GetNumPlayerIdentifiers(playerSrc: number): number;
+
+declare function GetNumPlayerIndices(): number;
+
+declare function GetNumPlayerTokens(playerSrc: number): number;
+
 /**
  * Registered commands can be executed by entering them in the client console (this works for client side and server side registered commands). 
  * Or by entering them in the server console/through an RCON client (only works for server side registered commands). 
@@ -78,4 +84,4 @@ declare var exports: any; // eslint-disable-line no-var
 /**
  * player's server id, which is present on client's `onNet` calls
  */
-declare var source: string; // eslint-disable-line no-var
+declare var source: number; // eslint-disable-line no-var
