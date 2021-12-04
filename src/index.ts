@@ -52,6 +52,8 @@ declare function GetNumPlayerTokens(playerSrc: number): number;
 
 declare function GetPlayerIdentifier(playerSrc: number, identifier: number): string;
 
+declare function GetPlayerFromIndex(index: number): number;
+
 /**
  * Registered commands can be executed by entering them in the client console (this works for client side and server side registered commands). 
  * Or by entering them in the server console/through an RCON client (only works for server side registered commands). 
